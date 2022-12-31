@@ -30,8 +30,8 @@
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul>
                     <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
-                        <span class="fa fa-sign-in"></span> Login</a>
+                        <a> 
+                        <span class="fa fa-sign-in" ></span> Login</a>
                     </span>
                 </div>               
         </div>
@@ -42,7 +42,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" >&times;</button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" >Cancel</button>
                             <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
                         </div>
                     </form>
@@ -86,8 +86,8 @@
                     </div>
                     <div class="col-5 col-xl-4">
                         
-                        <button type="button" class="btn btn-block btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal" title="Or Call us at  <br><strong>+852 12345678</strong>"
-                            data-placement="bottom">
+                        <button type="button" class="btn btn-block btn-warning" title="Or Call us at  <br><strong>+852 12345678</strong>"
+                           >
                             Reserve Table
                         </button>
 
@@ -349,5 +349,54 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
+
+
+            $('button').click(function(){
+            $('#reserveModal').modal('show');
+            });
+
+            $('span').click(function(){
+            $('#loginModal').mode('show');
+            });
+
+            //const reservButton = document.getElementById('reserveButton'); 
+                /*const reservModal = document.getElementById('reserveModal');
+                
+                const configObject = { keyboard: false }
+                const reserveMode = new bootstrap.Modal(reservModal, configObject);
+                    reservModal.addEventListener('show.bs.modal', event => {
+                        if(!data) {
+                            return event.preventDefault()
+                        }
+                });*/
+            /*const loginButton = document.getElementById('loginButton'); 
+                const loginModal = document.getElementById('loginModal');
+                const loginMode = new Modal(loginModal);
+                    loginButton.addEventListener('click', () => {
+                    loginMode.show();
+                });*/
+
+            /*function reserveModal() {
+                $(bootstrap).Modal(document.getElementById("reserveModal"), {});
+                $(document).onreadystatechange(function() {
+                $(reserveModal).show();
+                });
+                }*/
+
+            /*}= new bootstrap.Modal(document.getElementById("reserveModal"), {});
+            document.onreadystatechange = function () {
+            myModal.show();
+            };*/
+
+            /*function openModal() {
+                $(document).ready(function(){
+                    $("#reserveModal").modal('show');
+                });
+            }
+            function closeModal () {
+                $(document).ready(function(){
+                    $("#reserveModal").modal('hide');
+                });
+            }*/
     </script>
 </html>
